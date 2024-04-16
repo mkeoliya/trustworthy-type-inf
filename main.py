@@ -1,15 +1,17 @@
 
 from openai import OpenAI
 import dotenv
+import json
+
+from utils import annotate_gts
 
 dotenv.load_dotenv()
-client = OpenAI()
 
-completion = client.chat.completions.create(
-    model="gpt-4-turbo",
-    messages=[{"role": "user", "content": "Say this is a test"}],
-)
+annotate_gts(folders=['benchmarks/type-eval-py/analysis_sensitivities', 'benchmarks/type-eval-py/python_features'])
 
-print(completion.choices[0].message)
+# client = OpenAI()
+# completion = get_response(client, p)
+# for choice in completion.choices:
+#     print(choice.message['content'])
 
 
