@@ -29,7 +29,6 @@ def insert_code(item, py_file):
 def annotate_gt(py_file):
     basename = py_file.split(".")[0]
     gt_file = f"{basename}_gt.json"
-    print(f"Annotating ground truth: {gt_file}")
 
     with open(gt_file, "r") as f:
         gt = json.load(f)
@@ -45,7 +44,11 @@ def annotate_gts(folders):
         py_files = glob.glob(f"{folder}/**/*.py", recursive=True)
         for py_file in py_files:
             print(f"Annotating ground truth for: {py_file}")
-            # annotate_gt(py_file)
+            try:
+                annotate_gt(py_file)
+            except Exception as e:
+                print(f"Error annotating {py_file}: {e}")
+                continue
 
 
 

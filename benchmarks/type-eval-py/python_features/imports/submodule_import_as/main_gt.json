@@ -1,11 +1,1 @@
-[
-    {
-        "file": "main.py",
-        "line_number": 6,
-        "col_offset": 1,        
-        "variable": "a",
-        "type": [
-            "int"
-        ]
-    }
-]
+[{"file": "main.py", "line_number": 6, "col_offset": 1, "variable": "a", "type": ["int"], "code": "# Same concept as with `import_as` but with a submodule\n\n\n\n\n\nimport to_import.to_import as as_to_import\n\n\n\na = as_to_import.func()\n"}]

@@ -1,11 +1,1 @@
-[
-    {
-        "file": "main.py",
-        "line_number": 10,
-        "col_offset": 1,
-        "variable": "a",
-        "type": [
-            "A.B"
-        ]
-    }
-]
+[{"file": "main.py", "line_number": 10, "col_offset": 1, "variable": "a", "type": ["A.B"], "code": "# An attribute exception is raised.\n\n\n\n\n\nclass A:\n\n    class B(Exception):\n\n        def __init__(self):\n\n            pass\n\n\n\n\n\na = A.B()\n"}]

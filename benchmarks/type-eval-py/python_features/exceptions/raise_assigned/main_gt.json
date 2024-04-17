@@ -1,11 +1,1 @@
-[
-    {
-        "file": "main.py",
-        "line_number": 9,
-        "col_offset": 1,
-        "variable": "a",
-        "type": [
-            "A"
-        ]
-    }
-]
+[{"file": "main.py", "line_number": 9, "col_offset": 1, "variable": "a", "type": ["A"], "code": "# An assigned exception is raised.\n\n\n\n\n\nclass A(Exception):\n\n    def __init__(self):\n\n        pass\n\n\n\n\n\na = A()\n"}]

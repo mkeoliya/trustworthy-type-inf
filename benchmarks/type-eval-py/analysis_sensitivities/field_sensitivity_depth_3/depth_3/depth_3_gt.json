@@ -1,11 +1,1 @@
-[
-    {
-        "file": "depth_3.py",
-        "line_number": 24,
-        "col_offset": 1,
-        "variable": "result1",
-        "type": [
-            "int"
-        ]
-    }
-]
+[{"file": "depth_3.py", "line_number": 24, "col_offset": 1, "variable": "result1", "type": ["int"], "code": "# Program for field sensitivity analysis in depth 3\n\n\n\n\n\nclass ArithmeticOperation:\n\n    def __init__(self, a, b):\n\n        self.a = a\n\n        self.result = None\n\n        self.nested = self.Nested(b)\n\n\n\n    class Nested:\n\n        def __init__(self, b):\n\n            self.nested2 = self.Nested2(b)\n\n\n\n        class Nested2:\n\n            def __init__(self, c):\n\n                self.c = c\n\n\n\n    def compute(self):\n\n        self.result = self.a + self.nested.nested2.c\n\n        return self.result\n\n\n\n\n\narith_op = ArithmeticOperation(5, 4)\n\nresult1 = arith_op.compute()\n"}]

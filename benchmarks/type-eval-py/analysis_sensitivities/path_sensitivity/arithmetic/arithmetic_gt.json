@@ -1,11 +1,1 @@
-[
-    {
-        "file": "arithmetic.py",
-        "line_number": 12,
-        "col_offset": 1,
-        "variable": "result",
-        "type": [
-            "int"
-        ]
-    }
-]
+[{"file": "arithmetic.py", "line_number": 12, "col_offset": 1, "variable": "result", "type": ["int"], "code": "# A simple Python program that reuses the same variable name for different types\n\n\n\nif True:\n\n    a = 1\n\n    b = 2\n\n    temp = a + b\n\nelse:\n\n    a = 1.0\n\n    b = 2.0\n\n    temp = a + b\n\n\n\nresult = a + b\n"}]

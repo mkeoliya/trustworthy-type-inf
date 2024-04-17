@@ -1,11 +1,1 @@
-[
-    {
-        "file": "main.py",
-        "line_number": 6,
-        "col_offset": 1,        
-        "variable": "a",
-        "type": [
-            "str"
-        ]
-    }
-]
+[{"file": "main.py", "line_number": 6, "col_offset": 1, "variable": "a", "type": ["str"], "code": "# A module imports an item from another module in its `__init__` file. Then that item is imported by another module.\n\n\n\n\n\nfrom nested_init import smth\n\n\n\na = smth.func()\n"}]

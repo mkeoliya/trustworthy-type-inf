@@ -1,11 +1,1 @@
-[
-    {
-        "file": "main.py",
-        "line_number": 6,
-        "col_offset": 1,        
-        "variable": "a",
-        "type": [
-            "str"
-        ]
-    }
-]
+[{"file": "main.py", "line_number": 6, "col_offset": 1, "variable": "a", "type": ["str"], "code": "# The `main` module imports `func` from `from_mod` which defines a function. This function is then called by `main`\n\n\n\n\n\nfrom from_mod import func\n\n\n\na = func()\n"}]

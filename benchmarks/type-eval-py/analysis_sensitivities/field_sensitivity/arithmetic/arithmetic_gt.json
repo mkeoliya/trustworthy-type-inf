@@ -1,11 +1,1 @@
-[
-    {
-        "file": "arithmetic.py",
-        "line_number": 19,
-        "col_offset": 1,
-        "variable": "result1",
-        "type": [
-            "int"
-        ]
-    }
-]
+[{"file": "arithmetic.py", "line_number": 19, "col_offset": 1, "variable": "result1", "type": ["int"], "code": "# Program defines a class called 'ArithmeticOperation'.\n\n# The class takes two parameters 'a' and 'b' in its constructor, and has a method called 'compute' that computes the sum of the two parameters.\n\n# The class also has a member variable 'result' that stores the result of the computation.\n\n# The given code is an example of field sensitivity because it can recognise values based on the values assigned to its member variables.\n\n\n\n\n\nclass ArithmeticOperation:\n\n    def __init__(self, a, b):\n\n        self.a = a\n\n        self.b = b\n\n        self.result = None\n\n\n\n    def compute(self):\n\n        self.result = self.a + self.b\n\n        return self.result\n\n\n\n\n\narith_op = ArithmeticOperation(5, 10)\n\nresult1 = arith_op.compute()\n"}]

@@ -1,11 +1,1 @@
-[
-    {
-        "file": "main.py",
-        "line_number": 4,
-        "col_offset": 1,
-        "variable": "a",
-        "type": [
-            "Nonetype"
-        ]
-    }
-]
+[{"file": "main.py", "line_number": 4, "col_offset": 1, "variable": "a", "type": ["Nonetype"], "code": "# A call on an externally imported function.\n\nfrom typeevalpy_external_module.ext import function\n\n\n\na = function()\n"}]
